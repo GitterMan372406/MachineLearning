@@ -1,0 +1,11 @@
+def pcep(inputs, weights):
+    row1 = [inputs[0], weights[0]]
+    row2 = [inputs[1], weights[1]]
+    row3 = [inputs[2], weights[2]]
+    row4 = [inputs[3], weights[3]]
+    res1 = (row1[0] * row1[1]) / 4
+    res2 = (row2[0] * row2[1]) / 4
+    res3 = (row3[0] * row3[1]) / 4
+    res4 = (row4[0] * row4[1]) / 4
+    output = res1 + res2 + res3 + res4
+    return output
